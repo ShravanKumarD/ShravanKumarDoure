@@ -1,43 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
+import { useNavigate } from 'react-router-dom';
+import { OrbitControls, Sphere, MeshDistortMaterial,Cone,Shape,Extrude} from '@react-three/drei';
 import './Home.css'; 
-import bgImg from "./../assets/house.jpg"
 import TypingText from "./TypingText";
-import { Button } from 'react-bootstrap';
-const Home= () => {
+import Loader from "./Loader";
+import Header from "./../components/Header";
+const Home = () => {
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    setLoading(true); 
+
+    setTimeout(() => {
+      setLoading(false); 
+      navigate('/about'); 
+    }, 500); 
+  };
 
   return (
     <div className="homepage">
-      <Canvas>
+      <Header />
+      <Canvas className='canvas'>
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
-        <directionalLight position={[2, 5, 2]} intensity={1} />
-        <Sphere visible args={[1, 100, 200]} scale={2.5}>
+        <directionalLight position={[2, 5, 2]} intensity={5} />
+        <Sphere visible args={[1, 100, 200]} scale={2.3}>
           <MeshDistortMaterial
-            color="#8352FD"
-            attach="material"
-            distort={0.5}
-            speed={2}/>
+            color="#1D3557"
+            distort={0.5} 
+            speed={2}
+          />
         </Sphere>
       </Canvas>
       
       <div className="content">
         <h1>Shravan Kumar Doure</h1>
-        <TypingText/>
-        <p></p>
-        <button className='btn btn-info btn-sm brand-hero-button' onClick={()=>{'/'}}>Want to Know More About Me?</button>
+        <TypingText />
+     <br/>
+        <button
+          className="btn btn-info btn-sm brand-hero-button"
+          onClick={handleNavigate}
+        >
+          Want to Know More About Me?
+        </button>
+      </div>
+      <div className='modal-container'>
+      {loading && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+          <Canvas style={{ width: '150px', height: '150px' }}>
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={4.5} />
+              <Loader/>     
+            </Canvas> 
+
+          </div>
+        </div>
+      )}
       </div>
     </div>
   );
 };
 
 export default Home;
-
-
-{/* <p>Dynamic and driven MERN Stack Developer with hands-on experience, 
-leveraging 2.6 months of expertise in building scalable web applications. 
-Proficient in AWS cloud services and passionate about coding, 
-I am always eager to learn and adapt to new technologies. 
-My enthusiasm for innovation and continuous improvement 
-fuels my drive to deliver efficient and impactful solutions.</p> */}

@@ -1,0 +1,56 @@
+.toggle-container{
+z-index: 1000;
+}
+.toggle-btn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    float: right;
+    z-index: 1;
+  }
+  
+  .navbar {
+    backdrop-filter: blur(15px );
+    padding: 10px;
+    float: right;
+    right: 0;
+    z-index: 1000;
+    position: absolute;
+    font-family: monospace;
+    font-weight: 600;
+    margin-right: 3vw;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar a:hover {
+    background-color: #FF8800;
+  }
+  .toggleImg{
+    height: 3vh;
+    /* background-color:#FF8800; */
+    background-color: #a2e6de;
+    padding: 0px;
+    margin: 0px;
+  }
+  .toggleClose{
+    height: 2.5vh;
+    background-color: #a2e6de;
+    padding: 1px;
+  }
