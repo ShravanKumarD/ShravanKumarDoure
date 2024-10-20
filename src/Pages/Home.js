@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useNavigate } from 'react-router-dom';
-import { OrbitControls, Sphere, MeshDistortMaterial,Cone,Shape,Extrude} from '@react-three/drei';
+import { OrbitControls, Sphere, MeshDistortMaterial} from '@react-three/drei';
 import './Home.css'; 
 import TypingText from "./TypingText";
 import Loader from "./Loader";
