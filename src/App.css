@@ -25,12 +25,12 @@ p {
   margin: 1rem 0 0;
   font-weight: 400;
   font-family: monospace;
+  
 }
 
 .container {
   position: relative;
-  width: 80%;
-  height: 100vh; 
+  height: 110vh; 
   overflow: hidden; 
 }
 
@@ -95,18 +95,25 @@ h2 {
   font-weight: bold;
 }
 .exp-container{
-  overflow: hidden;
   padding: 130px;
 }
 @media(max-width:768px) {
   .logo {
   display: none;
   }
-  
+  .exp-container{
+    padding: 50px;
+  }
+  th{
+    display: none;
+  }
+  .projects-container {
+    padding: 0px
+  }
 }
 .projects-container{
   overflow: hidden;
-  padding: 100px;
+  padding: 50px;
 
 }
 .contact-container{
@@ -114,9 +121,9 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  padding: 100px;
+  padding: 45px;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 5px;
 }
 .user-info{
   display: flex;

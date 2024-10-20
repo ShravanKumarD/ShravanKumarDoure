@@ -6,7 +6,8 @@ export default function Projects() {
     <>
       <Header />
       <div className="projects-container">
-      <h2>Projects I worked on</h2>
+        
+      <h2 className='mt-2'>Projects I worked on</h2>
         <p>
           <strong>CreditMitra</strong><br />
           <ul>
