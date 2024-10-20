@@ -25,9 +25,6 @@ export default function Contact() {
             <a href='https://drive.google.com/file/d/1japeZu1vZGJxf7MOaLxvl1a0RpsbB382/view?usp=sharing' download rel='noopener noreferrer' style={{ textDecoration: "none" }}>
               Resume
             </a>
-            {/* <a href='/resume.pdf' target='_blank' rel='noopener noreferrer' style={{ textDecoration: "none" }}>
-  View Resume
-</a> */}
           </p>
 
           <p>Driven by a passion for building efficient and scalable applications, I'm excited to leverage my expertise in full-stack development and AWS to contribute to innovative projects. 
