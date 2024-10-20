@@ -16,12 +16,10 @@ function App() {
     }, [location.pathname]);
     return children;
   };
-  // bg-dark 
   return (
     <div className="App bg-dark text-white">
       <BrowserRouter> 
         <ScrollToTop>
-          {/* <Header/> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About/>}/>
