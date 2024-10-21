@@ -44,13 +44,14 @@ z-index: 1000;
   }
   .toggleImg{
     height: 3vh;
-    /* background-color:#FF8800; */
     background-color: #a2e6de;
     padding: 0px;
     margin: 0px;
+    z-index: 1;
   }
   .toggleClose{
     height: 2.5vh;
     background-color: #a2e6de;
     padding: 1px;
+    z-index: 1;
   }

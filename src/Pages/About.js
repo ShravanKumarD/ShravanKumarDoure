@@ -12,7 +12,7 @@ export default function About() {
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <directionalLight position={[0, 0, 2]} intensity={1} />
-        <Sphere position={[0, 0, 0.5]} args={[1, 100, 100]}>
+        <Sphere position={[0, 0, 0.5]} args={[1, 10, 10]}>
           <MeshDistortMaterial color="#6c757d" distort={0.4} speed={1} />
         </Sphere>
         <ambientLight intensity={1} />

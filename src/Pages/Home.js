@@ -15,7 +15,7 @@ const Home = () => {
 
     setTimeout(() => {
       setLoading(false); 
-      navigate('/about'); 
+      navigate('/projects'); 
     }, 500); 
   };
 
@@ -43,7 +43,7 @@ const Home = () => {
           className="btn btn-info btn-sm brand-hero-button"
           onClick={handleNavigate}
         >
-          Want to Know More About Me?
+          My projects
         </button>
       </div>
       <div className='modal-container'>

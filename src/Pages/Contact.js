@@ -26,33 +26,11 @@ export default function Contact() {
               Resume
             </a>
           </p>
-          <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-          <p style={{textAlign:"center"}}>Driven by a passion for building efficient and scalable applications, I'm excited to leverage my expertise in full-stack development and AWS to contribute to innovative projects. 
+         <p style={{textAlign:"center"}}>Driven by a passion for building efficient and scalable applications, I'm excited to leverage my expertise in full-stack development and AWS to contribute to innovative projects. 
             As I continue honing my skills and expanding my horizons, 
             I'm eager to take on new challenges and collaborate with teams that share my enthusiasm for creating impactful,
              user-focused solutions.</p>
-         
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
-             <p className='empty'></p>
+     
              
         </div>
       </div>
